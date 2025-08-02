@@ -1,0 +1,40 @@
+SmartRetailRegressor/
+│
+├── documents/
+│   └── project_structure.txt
+│
+├── data/
+│   └──raw/
+│       ├── features.csv
+│       ├── stores.csv
+│       ├── test.csv
+│       └── train.csv
+│
+├── notebooks/
+│   ├── 00_init.ipynb                       # Initialization of Directories
+│   ├── 01_data_exploration.ipynb           # Visualize & inspect the raw data
+│   └──
+│
+├── src/                                    # Python scripts for modular implementation
+│   ├── __init__.py                         # Initialization method Called in Main
+│   ├── __00__paths.py                      # Global variable for paths to use
+│   ├── __01__data_setup.py                 # Downloading, Preprocess Datasets
+│   ├──
+│   └──
+│
+├── outputs/                             # Python scripts for modular implementation
+│   ├── model/
+│   │   └──
+│   │
+│   ├── figures/
+│   │   ├──
+│   │   ├──
+│   │   └──
+│   │
+│   └── docs/
+│       └──
+│
+├── main.py                          # CLI or orchestrator for full training/eval
+├── README.md                        # Full description, instructions, results
+├── requirements.txt                 # Python dependencies
+└── .gitignore
