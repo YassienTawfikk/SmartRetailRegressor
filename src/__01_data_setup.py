@@ -1,10 +1,10 @@
 import kagglehub
 
+import pandas as pd
+import numpy as np
+
+
+
 
 def download_dataset():
     pass
-
-# Download latest version
-# path = kagglehub.dataset_download("aslanahmedov/walmart-sales-forecast")
-#
-# print("Path to dataset files:", path)
