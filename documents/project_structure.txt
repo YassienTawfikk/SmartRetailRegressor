@@ -13,6 +13,7 @@ SmartRetailRegressor/
 ├── notebooks/
 │   ├── 00_init.ipynb                       # Initialization of Directories
 │   ├── 01_data_exploration.ipynb           # Visualize & inspect the raw data
+│   ├── 02_model_baseline_rf.ipynb          # Train and evaluate Model
 │   └──
 │
 ├── src/                                    # Python scripts for modular implementation
