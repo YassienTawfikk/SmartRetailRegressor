@@ -4,36 +4,54 @@ SmartRetailRegressor/
 │   └── project_structure.txt
 │
 ├── data/
+│   ├── raw/
+│   │   ├── stores.csv
+│   │   ├── features.csv
+│   │   ├── test.csv
+│   │   └── train.csv
+│   │
+│   ├── processed/
+│   │   └── processed_data.csv
+│   │
 │   └──raw/
-│       ├── features.csv
-│       ├── stores.csv
 │       ├── test.csv
 │       └── train.csv
 │
 ├── notebooks/
-│   ├── 00_init.ipynb                       # Initialization of Directories
-│   ├── 01_data_exploration.ipynb           # Visualize & inspect the raw data
-│   ├── 02_model_baseline_rf.ipynb          # Train and evaluate Model
-│   └──
+│   ├── 00_init.ipynb
+│   ├── 01_data_exploration.ipynb
+│   ├── 02_model_baseline_rf.ipynb
+│   ├── 03_model_evaluation.ipynb
+│   └── 04_XGBoost_model.ipynb
 │
 ├── src/                                    # Python scripts for modular implementation
-│   ├── __init__.py                         # Initialization method Called in Main
-│   ├── __00__paths.py                      # Global variable for paths to use
-│   ├── __01__data_setup.py                 # Downloading, Preprocess Datasets
-│   ├──
-│   └──
+│   ├── __init__.py
+│   ├── __00__paths.py
+│   ├── __01__data_setup.py
+│   ├── __02__rf_model_pipelines.py
+│   ├── __03__model_evaluation.py
+│   └──__04__XGBoost_model.py
 │
 ├── outputs/                             # Python scripts for modular implementation
 │   ├── model/
-│   │   └──
+│   │   ├── random_forest_model.joblib
+│   │   └── xgboost_model.joblib
 │   │
 │   ├── figures/
-│   │   ├──
-│   │   ├──
-│   │   └──
+│   │   ├── RF_actual_predicted.png
+│   │   ├── RF_feature_importance.png
+│   │   ├── RF_residual_hist.png
+│   │   ├── RF_residuals_vs_pred.png
+│   │   ├── RF_tree_visualization.png
+│   │   ├── XGBoost_actual_predicted.png
+│   │   ├── XGBoost_feature_importance.png
+│   │   ├── XGBoost_residual_hist.png
+│   │   └── XGBoost_residuals_vs_pred.png
 │   │
 │   └── docs/
-│       └──
+│       ├── RF_model_metrics.txt
+│       ├── RF_model_params.txt
+│       └── XGBoost_model_metrics.txt
 │
 ├── main.py                          # CLI or orchestrator for full training/eval
 ├── README.md                        # Full description, instructions, results
