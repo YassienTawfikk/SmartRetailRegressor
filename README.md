@@ -98,6 +98,13 @@ We generated:
 * Binary flags for key holidays (`is_thanksgiving`, `is_black_friday`, etc.)
 * Distance (in weeks) from holiday peaks (e.g. `dist_xmas_peak_wk`)
 
+### Domain Observations
+
+* Holiday weeks, especially around Christmas, Thanksgiving, and Black Friday, show peak sales performance.
+* Christmas sales typically occur during the 51st week, not in the final days of December as marked in the dataset.
+* Post-holiday months like January see a drop in sales, likely due to reduced consumer spending after November and December.
+* Features such as CPI, temperature, unemployment rate, and fuel price were excluded as they exhibited no significant patterns or correlation with weekly sales.
+
 ### Final Step
 
 * Encoded booleans, dropped raw `Date`
@@ -123,14 +130,14 @@ We generated:
 
 #### Actual vs Predicted
 
-| Random Forest                                             | XGBoost                                                             |
-| --------------------------------------------------------- | ------------------------------------------------------------------- |
+| Random Forest                                                                                             | XGBoost                                                                                                        |
+| --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
 | ![RF\_actual\_predicted](https://github.com/user-attachments/assets/7e4abc65-10cd-43dd-8b55-5f24d7839897) | ![XGBoost\_actual\_predicted](https://github.com/user-attachments/assets/20be3609-9293-4d81-a35b-11ed91b2d97a) |
 
 #### Feature Importance
 
-| Random Forest                                                 | XGBoost                                                                 |
-| ------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| Random Forest                                                                                               | XGBoost                                                                                                          |
+| ----------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | ![RF\_feature\_importance](https://github.com/user-attachments/assets/ee355995-78df-43db-88da-519f00a4c7ca) | ![XGBoost\_feature\_importance](https://github.com/user-attachments/assets/28b6dd64-8246-48dc-8f6a-f20375ea2cb4) |
 
 #### Tree Snapshot
