@@ -28,9 +28,7 @@ SmartRetailRegressor/
 │   ├── __init__.py
 │   ├── __00__paths.py
 │   ├── __01__data_setup.py
-│   ├── __02__rf_model_pipelines.py
-│   ├── __03__model_evaluation.py
-│   └──__04__XGBoost_model.py
+│   └──__02__model_creation.py
 │
 ├── outputs/                             # Python scripts for modular implementation
 │   ├── model/
