@@ -20,7 +20,7 @@ processed_data_dir = data_dir / "processed"
 curated_data_dir = data_dir / "curated"
 
 # Output Directories
-output_dir = base_dir / "output"
+output_dir = base_dir / "outputs"
 model_dir = output_dir / "models"
 figures_dir = output_dir / "figures"
 docs_dir = output_dir / "docs"
