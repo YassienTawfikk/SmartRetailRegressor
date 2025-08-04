@@ -1,6 +1,10 @@
 # SmartRetailRegressor
 
-Sales Forecasting for Walmart Stores Using Regression Models (Random Forest & XGBoost)
+> Sales Forecasting for Walmart Stores Using Regression Models (Random Forest & XGBoost)
+
+<p align='center'>
+<img width="800" alt="SmartRetailRegressor Poster" src="https://github.com/user-attachments/assets/b9e05c58-8fd7-4e47-b21e-1e19aa52c5fe" />  
+</p>
 
 ---
 
