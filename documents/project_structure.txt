@@ -38,11 +38,11 @@ SmartRetailRegressor/
 │   │   └── xgboost_model.joblib
 │   │
 │   ├── figures/
+│   │   ├── RF_tree_visualization.png
 │   │   ├── RF_actual_predicted.png
 │   │   ├── RF_feature_importance.png
 │   │   ├── RF_residual_hist.png
 │   │   ├── RF_residuals_vs_pred.png
-│   │   ├── RF_tree_visualization.png
 │   │   ├── XGBoost_actual_predicted.png
 │   │   ├── XGBoost_feature_importance.png
 │   │   ├── XGBoost_residual_hist.png
