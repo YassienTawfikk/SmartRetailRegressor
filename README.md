@@ -116,15 +116,16 @@ We generated:
 
 | Metric   | Random Forest | XGBoost |
 | -------- | ------------- | ------- |
-| MAE      | 3259.23       | 2267.61 |
-| WMAE     | 3264.11       | 2300.03 |
-| RMSE     | 5432.70       | 3978.45 |
-| R² Score | 93.88%        | 96.72%  |
+| MAE      | 1642.07       | 2267.61 |
+| WMAE     | 1676.58       | 2300.03 |
+| RMSE     | 3335.64       | 3978.45 |
+| R² Score | 97.69%        | 96.72%  |
 
 ### Performance Insights
 
-* **XGBoost** outperformed **Random Forest** across all metrics.
-* Feature importance distributions were different: XGBoost relied more on structural store features while Random Forest emphasized department and temporal patterns.
+* The **Random Forest** model underwent **exhaustive hyperparameter tuning** with a wide search space, leading to a substantial boost in accuracy.
+* As a result, Random Forest achieved the **highest R² score** (97.69%) and lower error metrics (MAE, WMAE, RMSE) compared to XGBoost.
+* This tuning allowed Random Forest to generalize better while maintaining strong accuracy on unseen data.
 
 ### Key Visuals
 
@@ -132,27 +133,27 @@ We generated:
 
 | Random Forest                                                                                             | XGBoost                                                                                                        |
 | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| ![RF\_actual\_predicted](https://github.com/user-attachments/assets/7e4abc65-10cd-43dd-8b55-5f24d7839897) | ![XGBoost\_actual\_predicted](https://github.com/user-attachments/assets/20be3609-9293-4d81-a35b-11ed91b2d97a) |
+| ![RF\_actual\_predicted](https://github.com/user-attachments/assets/cd0dad01-d8f0-4185-8d29-659600ea538c) | ![XGBoost\_actual\_predicted](https://github.com/user-attachments/assets/20be3609-9293-4d81-a35b-11ed91b2d97a) |
 
 #### Feature Importance
 
 | Random Forest                                                                                               | XGBoost                                                                                                          |
 | ----------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| ![RF\_feature\_importance](https://github.com/user-attachments/assets/ee355995-78df-43db-88da-519f00a4c7ca) | ![XGBoost\_feature\_importance](https://github.com/user-attachments/assets/28b6dd64-8246-48dc-8f6a-f20375ea2cb4) |
+| ![RF\_feature\_importance](https://github.com/user-attachments/assets/b6fc6053-8871-469d-bba3-6bd6e9b7baa2) | ![XGBoost\_feature\_importance](https://github.com/user-attachments/assets/28b6dd64-8246-48dc-8f6a-f20375ea2cb4) |
 
 #### Tree Snapshot
 
 * Random Forest (depth=3 view):
-  ![RF\_tree\_visualization](https://github.com/user-attachments/assets/e781fd2f-b9ce-41ff-a35e-cbab4b5d88f9)
+  ![RF\_tree\_visualization](https://github.com/user-attachments/assets/1c205f1d-ac1a-4f89-9bb1-80b0b45efe10)
 
 ---
 
 ## Conclusion
 
 * Both models captured seasonal and structural sales patterns effectively.
-* XGBoost consistently outperformed Random Forest in accuracy and generalization.
-* Feature engineering around holidays and date encodings was crucial for performance.
-
+* After exhaustive hyperparameter tuning, **Random Forest** outperformed XGBoost across all metrics, including R² score and error measures.
+* Feature engineering around holidays and date encodings was crucial for the performance of both models.
+  
 ---
 
 ## Project Structure
