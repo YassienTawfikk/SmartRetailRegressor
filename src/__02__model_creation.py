@@ -3,7 +3,9 @@ import joblib
 from src.__00__paths import model_dir
 
 
-def return_rf_model(max_depth=24, max_features='log2', min_samples_leaf=1, min_samples_split=2, n_estimators=180, n_jobs=-1, random_state=42, max_samples=None):
+def return_rf_model(max_depth=21, max_features=1.0, min_samples_leaf=1, min_samples_split=5, n_estimators=212, n_jobs=-1, random_state=42,
+                    max_samples=0.7504873126518792):
+    """Params are found from the hyperparameter tuning process in the notebook."""
     return RandomForestRegressor(
         max_depth=max_depth,
         max_features=max_features,
